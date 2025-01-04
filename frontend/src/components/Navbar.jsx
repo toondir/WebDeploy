@@ -3,17 +3,20 @@ import { Disclosure } from '@headlessui/react'
 import { NavLink } from 'react-router-dom'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
-const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
-  { name: 'Note', href: '/note' },
-  { name: 'Gallery', href: '/gallery' },
-  { name: 'Maps', href: '/map' },
-]
 
 
 
 function Navbar() {
+
+
+  const navigation = [
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Note', href: '/note' },
+    { name: 'Gallery', href: '/gallery' },
+    { name: 'Maps', href: '/map' },
+  ]
+  
 
   function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
