@@ -1,6 +1,8 @@
 
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Disclosure } from '@headlessui/react'
+import { NavLink } from 'react-router-dom'
 
 const Note = () => {
     const [notes, setNotes] = useState([]);

@@ -12,6 +12,8 @@ import {
 import axios from 'axios';
 import { MdOutlineClose } from "react-icons/md";
 import { FaLocationArrow } from "react-icons/fa";
+import { Disclosure } from '@headlessui/react'
+import { NavLink } from 'react-router-dom'
 
 export default function Maps() {
   const [apiKey, setApiKey] = useState('');

@@ -4,6 +4,9 @@ import axios from 'axios';
 import { FaCamera, FaRunning, FaLinkedin,  FaInstagram, FaFacebook   } from "react-icons/fa";
 import { ImAirplane } from "react-icons/im";
 
+import { Disclosure } from '@headlessui/react'
+import { NavLink } from 'react-router-dom'
+
 
 const Home = () => {
  
