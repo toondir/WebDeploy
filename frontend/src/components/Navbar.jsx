@@ -11,11 +11,13 @@ const navigation = [
   { name: 'Maps', href: '/map' },
 ]
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
+
 
 function Navbar() {
+
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+  }
   
   const [current, setCurrent] = useState('/');
 
@@ -52,3 +54,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
