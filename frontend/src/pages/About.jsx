@@ -1,4 +1,4 @@
-import Navbar from '../components/navbar.jsx';
+{/*import Navbar from '../components/navbar.jsx';*/}
 import { useEffect } from "react";
 
 
@@ -29,7 +29,7 @@ function About()
 
 
         <>
-        <Navbar/>
+        {/* <Navbar/>*/}
         <h1 className="hidden2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-pink-500 to-red-500 text-5xl mt-6 ml-6 mb-6 font-custom p-2">
         About This Website
         </h1>
