@@ -1,4 +1,4 @@
-
+import Navbar from "../components/navbar";
 import React, { useState, useEffect,useRef } from 'react';
 import axios from 'axios';
 
@@ -334,7 +334,7 @@ setVisitedCountriesCount(filteredCountries.length);
    return(
     
     <>
-    
+    <Navbar></Navbar>
 
     <h1  className=" text-6xl font-medium mb-9 mt-9 text-center font-custom text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-orange-500 to-orange-00">Gallery</h1>
     <h1 className="text-gray-400 text-4xl ml-6  font-custom">You have visited {visitedCountriesCount} countries</h1>
@@ -362,11 +362,9 @@ setVisitedCountriesCount(filteredCountries.length);
               <h1 className="text-lg font-semibold mt-2 m text-center font-custom">
                 Date taken: {new Date(picture.date_taken).toLocaleDateString('en-US') || "Date not available"}
               </h1> 
-              {/* 
+              
               <button type="button" className="bg-red-500 text-white py-2 px-4 rounded transition ease-in-out duration-300 hover:bg-red-700 font-custom" onClick={()=>handleDelete(picture)} >Delete</button>
-              */}            
-              </div>
-
+            </div>
           ))}
         </div>
 
@@ -395,7 +393,6 @@ setVisitedCountriesCount(filteredCountries.length);
 
         {/*Form*/}
 
-        
         <div className=" text-center flex items-center justify-center mb-5">
           <form className="p-5 bg-gray-200 rounded  w-[700px] " onSubmit={handleSubmit}>
             <label className="block flex font-medium mb-3">Image</label>
@@ -417,10 +414,13 @@ setVisitedCountriesCount(filteredCountries.length);
             onChange={(e)=>{setDescription(e.target.value); setDate("2024-10-31")}} required
             />
 
-         
+           {/* <label for="date">Taken Date:</label>
+            <input type="date" className="block" 
+            onChange={(e)=>setDate(e.target.value)}
+             />*/ }
 
              
-            
+             {/*Map*/ }
               <div className="flex justify-center items-center mb-9">
                 <div className="h-[500px] w-[80%]">
                   <div className="relative h-full w-full rounded-lg overflow-hidden">
@@ -462,7 +462,7 @@ setVisitedCountriesCount(filteredCountries.length);
 
                 </div>
               </div>
-             
+               {/*Map*/ }
                <div>
                 
                </div>
@@ -478,13 +478,11 @@ setVisitedCountriesCount(filteredCountries.length);
 
 
           </form>
-     
-        
+          {/*Form*/}
 
 
 
-        </div>  
-        
+        </div>
 
       
 
