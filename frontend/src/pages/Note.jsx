@@ -1,4 +1,4 @@
-import Navbar from "../components/navbar";
+
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -86,7 +86,7 @@ const Note = () => {
 
     return (
         <>
-            <Navbar />
+        
             <h1 className="text-orange-300 text-center text-6xl mb-9 mt-9 font-custom"> Notes</h1>
             {notes.map(note => (
                 <div key={note.id} className="max-w-[90%] mx-auto bg-green-100 shadow-md rounded-lg mb-4 p-4 transform transition-transform duration-300 ease-in-out hover:scale-[102%]">

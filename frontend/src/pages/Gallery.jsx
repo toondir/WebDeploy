@@ -1,4 +1,4 @@
-import Navbar from "../components/navbar";
+
 import React, { useState, useEffect,useRef } from 'react';
 import axios from 'axios';
 
@@ -334,7 +334,7 @@ setVisitedCountriesCount(filteredCountries.length);
    return(
     
     <>
-    <Navbar></Navbar>
+    
 
     <h1  className=" text-6xl font-medium mb-9 mt-9 text-center font-custom text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-orange-500 to-orange-00">Gallery</h1>
     <h1 className="text-gray-400 text-4xl ml-6  font-custom">You have visited {visitedCountriesCount} countries</h1>

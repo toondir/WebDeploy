@@ -8,7 +8,7 @@ import {
   Pin,
   InfoWindow,
 } from "@vis.gl/react-google-maps";
-import Navbar from "../components/navbar";
+
 import axios from 'axios';
 import { MdOutlineClose } from "react-icons/md";
 import { FaLocationArrow } from "react-icons/fa";
@@ -51,7 +51,7 @@ export default function Maps() {
   if (isLoading || !apiKey) {
     return (
       <>
-        <Navbar />
+        
         <div className="w-full h-[92vh] flex items-center justify-center">
           <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-blue-500"></div>
         </div>
@@ -61,7 +61,7 @@ export default function Maps() {
 
   return (
     <>
-      <Navbar />
+
       <APIProvider apiKey={apiKey}>
         <div className="w-full h-[92vh]">
         <Map 

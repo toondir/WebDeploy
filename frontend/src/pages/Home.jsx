@@ -1,4 +1,4 @@
-import Navbar from "../components/navbar";
+
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { FaCamera, FaRunning, FaLinkedin,  FaInstagram, FaFacebook   } from "react-icons/fa";
@@ -29,7 +29,7 @@ const Home = () => {
 
   return (
     <>
-      <Navbar />
+      
       <div className="h-[600px] relative flex items-center justify-center ">
        
         <div 
